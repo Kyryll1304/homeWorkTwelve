@@ -65,3 +65,34 @@ for (let i = 0; i < arr.length; ++i) {
   }
 }
 console.log(arrOdd);
+
+//Task seven
+sum = 0;
+
+for (let i = 0; i < arrOdd.length; ++i) {
+  if (arrOdd[i] > 0) {
+    sum += arrOdd[i];
+  }
+}
+console.log(sum);
+//Task eight
+sum = 0;
+
+for (let i = 0; i < arrEven.length; ++i) {
+  if (arrEven[i] > 0) {
+    sum += arrEven[i];
+  }
+}
+console.log(sum);
+//Task nine
+const mult = arrFiltered.reduce((prevValue, curValue) => {
+  return prevValue * curValue;
+}, 1);
+console.log(mult);
+
+//Task ten
+
+let val = Math.max(...arr);
+
+let numTwo = arrFiltered.filter((element) => element >= val);
+console.log(numTwo);
